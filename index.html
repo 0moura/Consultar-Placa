@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<title>Api Veículo V²</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!---------CSS------------->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<style type="text/css">
+
+		
+		.xxx{
+			margin: 0 auto;
+			align-items: center;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: center;
+			padding-top: 10px;
+
+
+		}
+		.card-body{
+			width: 80%;
+			height: auto;
+			margin-left: 10%;
+			border:2px solid #4b4e4e;
+			border-radius: 30px;
+		}
+		.zz{
+			margin: auto;
+    padding-top: 2%;
+		}
+		
+		
+	</style>
+</head>
+
+<body>
+	<div class="container text-center" style="padding-top: 10px;">
+		<h2 style="font-family: initial;">Buscar Veículo</h2>
+		<section>
+			<div class="xxx">
+				<form class="form-inline" id="form" method="POST">
+				  <div class="form-group mb-2">
+				    <label for="staticEmail2" >Informe a placa</label>
+				  </div>
+				  <div class="form-group mx-sm-3 mb-2">
+				    <input type="text" class="form-control" id="placa" placeholder="XXX0000">
+				  </div>
+				  	<button type="submit" id="btnBuscarID"  class="btn btn-outline-dark mb-2">Buscar</button>
+				</form>
+
+
+			</div>
+		</section>
+		<section >
+			<div class="card-body" id="cardb">
+				<h4 class="card-title text-center">Resultado da Consulta</h4>
+					<div class="form-row">
+					  <div class="form-group col-md-2">
+					      <label for="inputCity">Ano Fabricação</label>
+					      <input type="text" class="form-control" id="ano" readonly>
+					   </div>
+					   <div class="form-group col-md-2">
+					     <label for="inputState">Ano Modelo</label>
+					     <input type="text" class="form-control" id="anoModelo" readonly>
+					   </div>
+					   <div class="form-group col-md-2">
+					     <label for="inputZip">Chassi</label>
+					     <input type="text" class="form-control" id="chassi" readonly>
+					   </div>
+					   <div class="form-group col-md-2">
+					     <label for="inputZip">Cor</label>
+					     <input type="text" class="form-control" id="cor" readonly>
+					   </div>
+					   <div class="form-group col-md-3">
+					      <label for="inputCity">Marca/Modelo</label>
+					      <input type="text" class="form-control" id="modelo" readonly>
+					    </div>
+					  </div>
+  			<div class="form-row">
+			    <div class="form-group col-md-2">
+			      <label for="inputZip">Placa</label>
+			      <input type="text" class="form-control" id="placaxx" readonly>
+			    </div>
+			    <div class="form-group col-4">
+			      <label for="inputZip">Situação</label>
+			      <input type="text" class="form-control " id="situacao" readonly>
+			    </div>
+			    <div class="form-group col-md-2">
+			      <label for="inputState">Município</label>
+			     	<input type="text" class="form-control" id="municipio" readonly>
+			    </div>
+			    <div class="form-group col-md-2">
+			      <label for="inputZip">UF</label>
+			      <input type="text" class="form-control " id="uf" readonly>
+			    </div>
+			    <!--<div class="form-group zz">
+			    	<button type="submit" class="btn btn-outline-dark"  onclick="window.print()" >Exportar</button>
+			    </div>-->
+			  </div> 
+
+					</div>
+				</section>
+	</div>
+
+
+
+<!--------JS---------->
+<script src="main.js"></script>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
